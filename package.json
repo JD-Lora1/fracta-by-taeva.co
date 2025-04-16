@@ -11,5 +11,12 @@
   "description": "",
   "devDependencies": {
     "firebase-tools": "^14.1.0"
+  },
+  "dependencies": {
+    "@firebase/app": "^0.11.4",
+    "@firebase/auth": "^1.10.0",
+    "@firebase/firestore": "^4.7.10",
+    "@firebase/storage": "^0.13.7",
+    "firebase": "^11.6.0"
   }
 }

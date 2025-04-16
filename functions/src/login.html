@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign Up</title>
+    <style>
+        /* Tus estilos CSS (sin cambios) */
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px; /* Añadir un ancho máximo */
+            width: 90%;      /* Hacerlo un poco responsivo */
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box; /* Importante para que el padding no aumente el ancho */
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px; /* Ajustar padding si es necesario */
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 1em; /* Tamaño de fuente consistente */
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #google-button{
+            background-color: #dd4b39;
+        }
+        #google-button:hover{
+            background-color: #bb3f30;
+        }
+        #error-message { /* Estilo para el mensaje de error */
+             color: red;
+             margin-top: 15px;
+             min-height: 1.2em; /* Para evitar saltos de layout */
+        }
+        /* Estilos para ocultar/mostrar elementos */
+        .hidden {
+            display: none;
+        }
+    </style>
+    </head>
+<body>
+    <div class="container" id="auth-container"> <h2>Login / Sign Up</h2>
+
+        <div id="user-info" class="hidden">
+             <p>Bienvenido, <span id="user-email"></span>!</p>
+             <button id="logout-button">Cerrar Sesión</button>
+             <hr>
+             <div id="scripts-container"></div>
+        </div>
+
+        <div id="login-form-area">
+            <form id="auth-form">
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                </form>
+            <button type="button" id="signup-button">Sign Up</button>
+            <button type="button" id="login-button">Login</button>
+            <hr>
+            <button type="button" id="google-button">Login with Google</button>
+            <p id="error-message"></p> </div>
+
+    </div>
+
+    <script type="module" src="./login.js"></script>
+</body>
+</html>

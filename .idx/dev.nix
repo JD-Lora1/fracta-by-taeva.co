@@ -31,8 +31,8 @@
           command = ["npx" "serve" "functions/src"];
           manager = "web";
           env = {
-            # Environment variables to set for your server
-            PORT = "$PORT";
+            # Set the port to 5000
+            PORT = "3000";
           };
         };
       };

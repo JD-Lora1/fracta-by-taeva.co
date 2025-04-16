@@ -1,7 +1,7 @@
 {
   "name": "functions",
   "scripts": {
-    
+    "build": "",
     "serve": "firebase emulators:start --only functions",
     "shell": "firebase functions:shell",
     "start": "npm run shell",
@@ -17,7 +17,9 @@
     "firebase-functions": "^6.0.1"
   },
   "devDependencies": {
+    "esbuild": "^0.25.2",
     "firebase-functions-test": "^3.1.0"
   },
-  "private": true
+  "private": true,
+  "type": "module"
 }
